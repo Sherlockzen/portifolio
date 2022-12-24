@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="light" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -10,13 +10,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@200;400;600&display=swap" rel="stylesheet">
-    
     <title>Portifolio</title>
 </head>
-<body class="bg-white flex flex-col justify-center">
-    <nav class="w-screen">
+<body class="bg-default flex flex-col justify-center">
+
+<!--  NAV   -->
+    <nav class="w-screen flex justify-between">
         <p class="font-epilogue font-extralight my-6 ml-12">Hewerton</p>
+        <div class="form-control my-6 mr-8 gap-2">
+            <label class="label cursor-pointer p-0">
+                <span class="label-text">Light</span>
+                <input type="checkbox" class="toggle"  />
+                <span class="label-text">Dark</span>
+            </label>
+        </div>
     </nav>
+<!--  NAV   -->
     <header class="mt-12 mx-8 mb-16 text-center">
         <p class="font-epilogue font-extralight">Front-End</p>
         <h1 class="font-epilogue font-semibold text-6xl">Developer</h1>
@@ -25,5 +34,27 @@
             <img class="-mt-10" src="img/code-g4ff8e4cc6_640.png" alt="image of a html close tag">
         </div>
     </header>
+    <section class="flex gap-10 px-16 justify-center flex-wrap max-h-screen">
+       <!-- <button class="btn btn-outline" data-set-theme="dark" data-act-class="ACTIVECLASS">Dark</button>
+        <button class="btn btn-primary" data-set-theme="light" data-act-class="ACTIVECLASS">Light</button>-->
+        
+        <div class="group hover:scale-125 text-center">
+            <img class="w-16 stroke-0 img-html" src="img/html5.svg">
+            <p class="opacity-100 sm:opacity-0 group-hover:opacity-100 ">Html</p>
+        </div>
+        <div class="text-center group hover:scale-125">
+            <img class="w-16" src="img/css3-alt.svg">
+            <p class="group-hover:opacity-100 opacity-0 sm:opacity-100">CSS</p>
+        </div>
+        <div>
+            <img class="w-16 img-linux" src="img/linux.svg">
+        </div>
+        <div>
+            <img class="w-16" src="img/node-js.svg">
+        </div>
+
+    </section>
+<!--    <script type="module" src="main.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
 </body>
 </html>
